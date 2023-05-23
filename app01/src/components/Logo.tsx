@@ -1,9 +1,9 @@
 import reactLogo from "../assets/react.svg";
 
-export function Logo(props: any) {
+export function Logo({ msg, icon }: any) {
   // const msg = props.msg;
   // const icon = props.icon;
-  const { msg, icon } = props;
+  // const { msg, icon } = props;
   return (
     <div>
       <a href="https://react.dev" target="_blank">
