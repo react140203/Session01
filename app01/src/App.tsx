@@ -21,15 +21,17 @@ function App() {
     console.log(counter);
   };
 
+  //Operator Guard &&
+
   return (
     <>
-      {counter !== 10 ? (
+      {counter !== 10 && (
         <div>
           <a href="https://react.dev" target="_blank">
             <img src={reactLogo} className="logo react" alt="React logo" />
           </a>
         </div>
-      ) : null}
+      )}
 
       <h1>Counter: {counter} </h1>
       <button onClick={inc}>➕</button>
