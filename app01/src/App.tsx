@@ -10,6 +10,11 @@ function App() {
     statement  ❌
     expression ✔️
   */
+
+  //Compiler:   source => code bin
+  //Transpiler: source => source code fg
+  // typescript => javascript
+  // javascript 2022 => javascript 6
   const msg = "سلام دنیا 💃 🎉 ";
   return (
     <>
