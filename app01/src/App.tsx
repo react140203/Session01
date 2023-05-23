@@ -4,9 +4,14 @@ import React, { useState } from "react";
 
 //Component React -> PascalCase
 function App() {
+  const [showLogo, setShowLogo] = useState(true);
+  const toggle = () => {
+    setShowLogo(!showLogo);
+  };
   return (
     <>
-      {1 !== 10 && <Logo />}
+      <button onClick={toggle}>toggle</button>
+      {showLogo && <Logo />}
       <Counter />
     </>
   );
