@@ -1,5 +1,4 @@
 import reactLogo from "../assets/react.svg";
-import React from "react";
 
 export function Logo() {
   return (
