@@ -79,3 +79,5 @@
 | Default | `export default function Button() {}` | `import Button from './Button.js';`     |
 | Named   | `export function Button() {}`         | `import { Button } from './Button.js';` |
 
+
+[Destructure](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment) 

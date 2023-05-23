@@ -12,7 +12,7 @@ function App() {
   return (
     <>
       <button onClick={toggle}>toggle</button>
-      {showLogo && <Logo />}
+      {showLogo && <Logo msg="salam" icon="⚛️" />}
       <Counter />
     </>
   );
