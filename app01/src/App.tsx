@@ -16,7 +16,7 @@ function App() {
 
   return (
     <>
-      {counter !== 10 && logo()}
+      {counter !== 10 && <Logo />}
 
       <h1>Counter: {counter} </h1>
       <button onClick={inc}>➕</button>
@@ -27,7 +27,7 @@ function App() {
 
 export default App;
 
-function logo() {
+function Logo() {
   return (
     <div>
       <a href="https://react.dev" target="_blank">
