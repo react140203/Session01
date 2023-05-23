@@ -1,22 +1,25 @@
 import reactLogo from "./assets/react.svg";
 import "./App.css";
-import React from "react";
+import React, { useState } from "react";
 
 //win 10, win 11  -> win + .
 function App() {
-  let counter = 0;
+  //State
+  //Hook
+
+  const stateArray = useState(10);
+  const counter = stateArray[0];
+  const setCounter = stateArray[1];
+
   const inc = () => {
-    counter += 1;
+    setCounter(counter + 1);
+    console.log(counter);
   };
-  //Expression
-  const incFn1 = function () {
-    counter += 1;
+  const dec = () => {
+    setCounter(counter - 1);
+    console.log(counter);
   };
-  //Statement
-  function incFn2() {
-    //this
-    counter += 1;
-  }
+
   return (
     <>
       <div>
@@ -26,7 +29,7 @@ function App() {
       </div>
       <h1>Counter: {counter} </h1>
       <button onClick={inc}>➕</button>
-      <button>➖</button>
+      <button onClick={dec}>➖</button>
     </>
   );
 }
