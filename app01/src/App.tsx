@@ -2,16 +2,9 @@ import reactLogo from "./assets/react.svg";
 import "./App.css";
 import React, { useState } from "react";
 
-//win 10, win 11  -> win + .
+//Component React -> PascalCase
 function App() {
-  //State
-  //Hook
-  // const stateArray = useState(10);
-  // const counter = stateArray[0];
-  // const setCounter = stateArray[1];
-  //Destructure
   const [counter, setCounter] = useState(10);
-
   const inc = () => {
     setCounter(counter + 1);
     console.log(counter);
@@ -20,8 +13,6 @@ function App() {
     setCounter(counter - 1);
     console.log(counter);
   };
-
-  //Operator Guard &&
 
   return (
     <>
