@@ -4,6 +4,17 @@ import React, { useState } from "react";
 
 //Component React -> PascalCase
 function App() {
+  return (
+    <>
+      {1 !== 10 && <Logo />}
+      <Counter />
+    </>
+  );
+}
+
+export default App;
+
+function Counter() {
   const [counter, setCounter] = useState(10);
   const inc = () => {
     setCounter(counter + 1);
@@ -16,16 +27,12 @@ function App() {
 
   return (
     <>
-      {counter !== 10 && <Logo />}
-
       <h1>Counter: {counter} </h1>
       <button onClick={inc}>➕</button>
       <button onClick={dec}>➖</button>
     </>
   );
 }
-
-export default App;
 
 function Logo() {
   return (
